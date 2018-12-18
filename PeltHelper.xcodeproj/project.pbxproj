@@ -26,6 +26,9 @@
 		4D84055921C47E8E00A2E390 /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84055821C47E8E00A2E390 /* IngredientTableViewController.swift */; };
 		4DBF136621C86F81008517D1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136521C86F81008517D1 /* CoreDataStack.swift */; };
 		4DBF136821C86FFE008517D1 /* IngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136721C86FFE008517D1 /* IngredientController.swift */; };
+		4DBF136A21C99513008517D1 /* SearchCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */; };
+		4DBF136D21C9952D008517D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136B21C9952D008517D1 /* SearchViewController.swift */; };
+		4DBF136E21C9952D008517D1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBF136C21C9952D008517D1 /* SearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		4D84055821C47E8E00A2E390 /* IngredientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 		4DBF136521C86F81008517D1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4DBF136721C86FFE008517D1 /* IngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientController.swift; sourceTree = "<group>"; };
+		4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinatorViewController.swift; sourceTree = "<group>"; };
+		4DBF136B21C9952D008517D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4DBF136C21C9952D008517D1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +102,15 @@
 			isa = PBXGroup;
 			children = (
 				4D24ED8721A8BEE3004347E6 /* PeltHelper.xcdatamodeld */,
-				4D24ED8D21A8C035004347E6 /* Outfit.swift */,
+				4DBF136521C86F81008517D1 /* CoreDataStack.swift */,
 				4D24ED8F21A8C098004347E6 /* Ingredient+Convenience.swift */,
+				4D24ED8D21A8C035004347E6 /* Outfit.swift */,
 				4D24ED9121A8C0BE004347E6 /* Animal.swift */,
 				4D24ED9321A8C394004347E6 /* Type.swift */,
 				4D24ED9521A8C3FC004347E6 /* Item.swift */,
 				4D24ED9721A8C43E004347E6 /* Location.swift */,
 				4D84055221C33B4900A2E390 /* ItemData.swift */,
 				4D84055421C4763100A2E390 /* TrapperOutifts.swift */,
-				4DBF136521C86F81008517D1 /* CoreDataStack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +127,7 @@
 		4D24ED8C21A8BF06004347E6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4DBF136F21C995BF008517D1 /* SearchFlow */,
 				4D24ED7721A8BE86004347E6 /* ViewController.swift */,
 				4D24ED7921A8BE86004347E6 /* Main.storyboard */,
 				4D84055621C47CA700A2E390 /* DetailViewController.swift */,
@@ -136,6 +143,16 @@
 				4DBF136721C86FFE008517D1 /* IngredientController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4DBF136F21C995BF008517D1 /* SearchFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */,
+				4DBF136B21C9952D008517D1 /* SearchViewController.swift */,
+				4DBF136C21C9952D008517D1 /* SearchViewController.xib */,
+			);
+			path = SearchFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +215,7 @@
 			files = (
 				4D24ED8021A8BE88004347E6 /* LaunchScreen.storyboard in Resources */,
 				4D24ED7D21A8BE88004347E6 /* Assets.xcassets in Resources */,
+				4DBF136E21C9952D008517D1 /* SearchViewController.xib in Resources */,
 				4D24ED7B21A8BE86004347E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +229,7 @@
 			files = (
 				4DBF136621C86F81008517D1 /* CoreDataStack.swift in Sources */,
 				4D84055721C47CA700A2E390 /* DetailViewController.swift in Sources */,
+				4DBF136A21C99513008517D1 /* SearchCoordinatorViewController.swift in Sources */,
 				4DBF136821C86FFE008517D1 /* IngredientController.swift in Sources */,
 				4D24ED7821A8BE86004347E6 /* ViewController.swift in Sources */,
 				4D24ED8921A8BEE3004347E6 /* PeltHelper.xcdatamodeld in Sources */,
@@ -220,6 +239,7 @@
 				4D24ED9021A8C098004347E6 /* Ingredient+Convenience.swift in Sources */,
 				4D24ED8E21A8C035004347E6 /* Outfit.swift in Sources */,
 				4D24ED9821A8C43E004347E6 /* Location.swift in Sources */,
+				4DBF136D21C9952D008517D1 /* SearchViewController.swift in Sources */,
 				4D24ED9621A8C3FC004347E6 /* Item.swift in Sources */,
 				4D24ED9421A8C394004347E6 /* Type.swift in Sources */,
 				4D24ED7621A8BE86004347E6 /* AppDelegate.swift in Sources */,

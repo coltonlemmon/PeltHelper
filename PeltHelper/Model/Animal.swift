@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc enum Animal: Int64 {
+@objc enum Animal: Int64, CaseIterable {
     case Alligator = 0
     case Armadillo = 1
     case Badger = 2
@@ -242,6 +242,137 @@ import Foundation
             return Ingredient(animal: .Pigeon, isLegendary: false, type: .Feather)
         case .Rooster:
             return Ingredient(animal: .Rooster, isLegendary: false, type: .Feather)
+        }
+    }
+    
+    var name: String {
+        switch self {
+        case .Alligator:
+            return "Alligator"
+        case .Armadillo:
+            return "Armadillo"
+        case .Badger:
+            return "Badger"
+        case .Bear:
+            return "Bear"
+        case .BlackBear:
+            return "Black Bear"
+        case .BlueJay:
+            return "Blue Jay"
+        case .Beaver:
+            return "Beaver"
+        case .Bison:
+            return "Bison"
+        case .Boar:
+            return "Boar"
+        case .Buck:
+            return "Buck"
+        case .Bull:
+            return "Bull"
+        case .Cardinal:
+            return "Cardinal"
+        case .CedarWaxwing:
+            return "Cedar Waxwing"
+        case .Chicken:
+            return "Chicken"
+        case .CollaredPeccaryPig:
+            return "Collared Peccary Pig"
+        case .Condor:
+            return "Condor"
+        case .Cougar:
+            return "Cougar"
+        case .Cow:
+            return "Cow"
+        case .Coyote:
+            return "Coyote"
+        case .Crow:
+            return "Crow"
+        case .Deer:
+            return "Deer"
+        case .Duck:
+            return "Duck"
+        case .Eagle:
+            return "Eagle"
+        case .Elk:
+            return "Elk"
+        case .Fox:
+            return "Fox"
+        case .GilaMonster:
+            return "Gila Monster"
+        case .Goat:
+            return "Goat"
+        case .Goose:
+            return "Goose"
+        case .Hawk:
+            return "Hawk"
+        case .Iguana:
+            return "Iguana"
+        case .Loon:
+            return "Loon"
+        case .Moose:
+            return "Moose"
+        case .Muskrat:
+            return "Muskrat"
+        case .Opossum:
+            return "Opossum"
+        case .Oriole:
+            return "Oriole"
+        case .Ox:
+            return "Ox"
+        case .Owl:
+            return "Owl"
+        case .Panther:
+            return "Panther"
+        case .Pheasant:
+            return "Pheasant"
+        case .Pig:
+            return "Pig"
+        case .Pigeon:
+            return "Pigeon"
+        case .Pronghorn:
+            return "Pronghorn"
+        case .Rabbit:
+            return "Rabbit"
+        case .Raccoon:
+            return "Raccoon"
+        case .Ram:
+            return "Ram"
+        case .Rat:
+            return "Rat"
+        case .Raven:
+            return "Raven"
+        case .Robin:
+            return "Robin"
+        case .Rooster:
+            return "Rooster"
+        case .Seagull:
+            return "Seagull"
+        case .Sheep:
+            return "Sheep"
+        case .Skunk:
+            return "Skunk"
+        case .Snake:
+            return "Snake"
+        case .Songbird:
+            return "Songbird"
+        case .Sparrow:
+            return "Sparrow"
+        case .Squirrel:
+            return "Squirrel"
+        case .TatankaBison:
+            return "Tatanka Bison"
+        case .Turkey:
+            return "Turkey"
+        case .Vulture:
+            return "Vulture"
+        case .Woodpecker:
+            return "Woodpecker"
+        case .Wolf:
+            return "Wolf"
+        case .WhiteBison:
+            return "White Bison"
+        case .Quail:
+        return "Quail"
         }
     }
 }
