@@ -29,6 +29,8 @@
 		4DBF136A21C99513008517D1 /* SearchCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */; };
 		4DBF136D21C9952D008517D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF136B21C9952D008517D1 /* SearchViewController.swift */; };
 		4DBF136E21C9952D008517D1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBF136C21C9952D008517D1 /* SearchViewController.xib */; };
+		4DBF137621CF0EBB008517D1 /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF137421CF0EBB008517D1 /* AnimalDetailViewController.swift */; };
+		4DBF137721CF0EBB008517D1 /* AnimalDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DBF137521CF0EBB008517D1 /* AnimalDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinatorViewController.swift; sourceTree = "<group>"; };
 		4DBF136B21C9952D008517D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4DBF136C21C9952D008517D1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4DBF137421CF0EBB008517D1 /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
+		4DBF137521CF0EBB008517D1 /* AnimalDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				4DBF136921C99513008517D1 /* SearchCoordinatorViewController.swift */,
 				4DBF136B21C9952D008517D1 /* SearchViewController.swift */,
 				4DBF136C21C9952D008517D1 /* SearchViewController.xib */,
+				4DBF137421CF0EBB008517D1 /* AnimalDetailViewController.swift */,
+				4DBF137521CF0EBB008517D1 /* AnimalDetailViewController.xib */,
 			);
 			path = SearchFlow;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 				4D24ED8021A8BE88004347E6 /* LaunchScreen.storyboard in Resources */,
 				4D24ED7D21A8BE88004347E6 /* Assets.xcassets in Resources */,
 				4DBF136E21C9952D008517D1 /* SearchViewController.xib in Resources */,
+				4DBF137721CF0EBB008517D1 /* AnimalDetailViewController.xib in Resources */,
 				4D24ED7B21A8BE86004347E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 			files = (
 				4DBF136621C86F81008517D1 /* CoreDataStack.swift in Sources */,
 				4D84055721C47CA700A2E390 /* DetailViewController.swift in Sources */,
+				4DBF137621CF0EBB008517D1 /* AnimalDetailViewController.swift in Sources */,
 				4DBF136A21C99513008517D1 /* SearchCoordinatorViewController.swift in Sources */,
 				4DBF136821C86FFE008517D1 /* IngredientController.swift in Sources */,
 				4D24ED7821A8BE86004347E6 /* ViewController.swift in Sources */,

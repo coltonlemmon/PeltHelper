@@ -14,6 +14,10 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Navigation
+    
+    var didSelect: (_ animal: Animal) -> () = {animal in}
+    
     // MARK: - Internal Properties
     
     let data = Animal.allCases
@@ -98,6 +102,16 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.textLabel?.text = animal.name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let animal: Animal
+        if isFiltering() {
+            animal = filteredData[indexPath.row]
+        } else {
+            animal = data[indexPath.row]
+        }
+        didSelect(animal)
     }
 }
 

@@ -16,6 +16,7 @@ class SearchCoordinatorViewController: UIViewController {
         navController = UINavigationController(rootViewController: searchVC)
         navController.navigationBar.prefersLargeTitles = true
         super.init(nibName: nil, bundle: nil)
+        searchVC.didSelect = { [weak self] in self?.showDetail($0) }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,6 +27,11 @@ class SearchCoordinatorViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         embed(navController)
+    }
+    
+    private func showDetail(_ animal: Animal) {
+        let animalDetailVC = AnimalDetailViewController(animal: animal)
+        navController.pushViewController(animalDetailVC, animated: true)
     }
 
 }
